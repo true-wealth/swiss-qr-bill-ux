@@ -50,11 +50,11 @@ The following demo can be used on any device. In case the e-banking app appears 
 
 ## Image
 
-TODO
+<button id="share-image-qr-bill">Share Image QR Bill</button>
 
 ## PDF
 
-TODO
+<button id="share-pdf-qr-bill">Share PDF QR Bill</button>
 
 # Compatibility table
 The following table provides information about the support of existing e-banking applications. This table is not complete and support may have changed in the meantime. Please create a pull request (or alternatively open an issue) in case you notice outdated or missing information.

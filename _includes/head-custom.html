@@ -1,0 +1,33 @@
+<script>
+  const shareHandler = (fileName, type) => {
+    return async () => {
+      try {
+        const response = await fetch('./assets/demo/' + fileName);
+        const blob = await response.blob();
+        const filesArray = [
+          new File(
+            [blob],
+            fileName,
+            {
+              type: type
+            }
+          )
+        ];
+        const shareData = {
+          files: filesArray,
+        };
+        await navigator.share(shareData);
+      } catch (err) {
+        // Caused for example when the client cancels share dialog
+      }
+    };
+  };
+
+  window.onload = () => {
+    const imageButton = document.querySelector('#share-image-qr-bill');
+    imageButton.addEventListener('click', shareHandler('qr-bill.png', 'image/png'));
+
+    const pdfButton = document.querySelector('#share-pdf-qr-bill');
+    pdfButton.addEventListener('click', shareHandler('qr-bill.pdf', 'application/pdf'));
+  };
+</script>
