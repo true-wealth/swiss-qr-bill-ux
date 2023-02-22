@@ -63,7 +63,7 @@ The following table provides information about the support of existing e-banking
 |:---------------------|:------|:----|
 | Bank Cler Zak        | ❌     | ❌   |
 | Credit Suisse – CSX  | ✅     | ✅   |
-| YAPEAL               | ❌     | ❌   |
+| YAPEAL               | ✅     | ✅   |
 | Yuh                  | ❌     | ❌   |
 | neon                 | ❌     | ❌   |
 | PostFinance App      | ✅     | ✅   |
